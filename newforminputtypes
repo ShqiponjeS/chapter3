@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>New HTML5 Input Types</title>
+</head>
+
+<body>
+	<h1>New HTML5 Input Types Demo</h1>
+	<p>THis form demonstrates the new html5 input types
+	   and the placeholder, required and autofocus attributes.
+	</p>
+
+	<form method= "post" action= "http://www.deitel.com">
+		<p>
+			<label>Color:
+				<input type="Color" autofocus />
+				(hexadecimal code such as #ADD8E6)	
+			</label>
+		</p>
+		<p>
+			<label>Date:
+				<input type="date" />
+				(yyyy-mm-dd)
+			</label>
+		</p>
+		<p>
+			<label> Datetime:
+             <input type="datetime" />
+                    (yyyy-mm-ddthh:mm+ff:gg, such as 2012-01-27t03:15)
+			</label>
+		</p>
+		<p>
+			<label>datetime-local:
+               <input type="datetime-local" />
+                (yyyy-mm-ddthh:mm, such as 2012-01-27t03:15)
+			</label>
+		</p>
+		<p>
+			<label>email:
+               <input type="email" placeholder="name@domain.com"
+                  required /> (name@domain.com)
+			</label>
+		</p>
+		<p>
+			<label>month:
+             <input type="month" /> (yyyy-mm)
+			</label>
+		</p>
+		<p>
+			<label>number:
+              <input type="number" 
+                  min = "0"
+                  max = "7"
+                  step = "1"
+                  value = "4" /> 
+			</label> (enter a nubmer between 0 and 7)
+		</p>
+		<p>
+			<label>range:
+             0 <input type="range" 
+                min = "0"
+                max = "20"
+                value = "10" /> 20
+			</label>
+		</p>
+		<p>
+			<label>serach:
+              <input type="serach" placeholder = "serach query" />
+			</label>
+		</p>
+		<p>
+			<label>tel:
+				<input type="tel" placeholder ="(###) ###-####"
+				pattern="\(\d{3}\) + \d{3}-\d{4}" required />
+				(###) ###-####
+			</label>
+		</p>
+		<p>
+			<label>time:
+				<input type="time" /> (hh:mm:ss.ff)			
+			</label>
+		</p>
+		<p>
+			<label>url:
+				<input type="url" 
+				 placeholder="http://www.domainname.com" />
+				 (http://www.domainname.com)
+				
+			</label>
+		</p>
+		<p>
+		<label>week:
+			<input type="week" />
+			(yyyy-wnn, such as 2012-w01)			
+		</label>
+	</p>
+	<p>
+		<input type="submit" value="submit" />
+		<input type="reset" value="clear">
+	</p>
+</form>
+
+
+</body>
+</html>
